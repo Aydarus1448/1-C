@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Введите целое число: ");
+    scanf("%d", &num);
+
+    const char* result = (num % 2 == 0) * "четное" + (num % 2 != 0) * "нечетное";
+
+    printf("Число %d является %s.\n", num, result);
+
+    return 0;
+}
